@@ -1,6 +1,5 @@
-package robot;
+package robot.oi;
 
-import edu.wpi.first.wpilibj.Joystick;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -8,10 +7,10 @@ import edu.wpi.first.wpilibj.Joystick;
  */
 public class OI {
 	
-	Joystick driver_Stick = new Joystick(0);
+	GameController driver_Stick = new GameController_Xbox360(0);
 	
 	public double getSpeedInput(){
-		return - driver_Stick.getRawAxis(0); // this is mapped on driver station
+		return  driver_Stick.getLeftYAxis(); // this is mapped on driver station
 	}
     
 }
