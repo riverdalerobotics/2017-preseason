@@ -11,7 +11,7 @@ public class OI {
 	Joystick driver_Stick = new Joystick(0);
 	
 	public double getSpeedInput(){
-		return driver_Stick.getRawAxis(0); // this is mapped on driver station
+		return - driver_Stick.getRawAxis(0); // this is mapped on driver station
 	}
     
 }
