@@ -8,11 +8,11 @@ import robot.Robot;
 /**
  *
  */
-public class ExampleCommand extends Command {
+public class JoystickCommand extends Command {
 
-    public ExampleCommand() {
+    public JoystickCommand() {
         // Use requires() here to declare subsystem dependencies
-        requires(Robot.exampleSubsystem);
+        requires(Robot.chassisSubsystem);
     }
 
     // Called just before this Command runs the first time
@@ -21,6 +21,8 @@ public class ExampleCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	double speed = Robot.oi.getSpeedInput();
+    	Robot.chassisSubsystem.setMotorSpeeds(speed);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -28,12 +30,9 @@ public class ExampleCommand extends Command {
         return false;
     }
 
-    // Called once after isFinished returns true
-    protected void end() {
-    }
-
-    // Called when another command which requires one or more of the same
-    // subsystems is scheduled to run
-    protected void interrupted() {
-    }
+	@Override
+	protected void end() {}
+	
+	@Override
+	protected void interrupted() {}
 }
