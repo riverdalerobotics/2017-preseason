@@ -10,7 +10,7 @@ public class OI {
 	GameController driver_Stick = new GameController_Xbox360(0);
 	
 	public double getSpeedInput(){
-		return  driver_Stick.getLeftYAxis(); // this is mapped on driver station
+		return  driver_Stick.getAxisLeftY(); // this is mapped on driver station
 	}
     
 }

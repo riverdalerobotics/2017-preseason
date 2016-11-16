@@ -27,7 +27,7 @@ public class ChassisSubsystem extends Subsystem {
     
     public void setMotorSpeeds(double speed){
     	left_motor.set(speed);
-    	right_motor.set(speed);
+    	right_motor.set(-speed);
     }
 }
 
