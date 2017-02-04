@@ -1,0 +1,34 @@
+Side Note: Directions are from looking at the robot from the front
+
+
+Y Connectors:
+
+Left Motors 	- 	Front (Inverted) 	Rear(Same color)
+Right Motors 	- 	Front (Same color) 	Rear (Inverted)
+
+
+
+Ports
+- port 2 and 8, white wire is facing the front
+- don't use port 8
+
+
+
+Controls
+
+Forward & Back 			-- 	Left Y Axis
+Left & Right 			-- 	Right X Axis
+
+Intake In				-- 	Right Bumper
+Intake Out				-- 	Left Bumper
+Outtake Out	On			-- 	B Button
+Outtake Out	Off			-- 	X Button
+
+Drive Forward Command 	-- 	A Button
+
+
+Ultrasonic Sensor 
+	Wires
+		Orange 			- 	Power
+		Blue/Brown 		- 	Ground
+		Green/White 		- 	Signal
